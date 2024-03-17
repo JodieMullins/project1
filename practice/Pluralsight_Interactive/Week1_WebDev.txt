@@ -304,3 +304,106 @@ h3 {
 }
 
 
+
+
+
+
+img {
+  transform: skewY(-15deg);
+}
+a {
+  color: #c44743;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0.5s;
+  
+}
+a:hover {
+  color: #d56d68;
+}
+
+
+
+.element {
+  background-color: #c44743;
+  transition: background-color 0.6s linear 0.1s;
+}
+.element:hover {
+  background-color: #d56d68;
+}
+
+
+.element {
+  color: #c44743;
+  transition: all 0.2s ease-in-out 0s;
+}
+.element:hover {
+  background-color: rgba(196, 71, 67, 0.10);
+  color: #d56d68;
+}
+
+
+
+
+@font-face{
+  
+}
+
+@font-face{
+  font-family: 'DroidSerifRegular';
+}
+@font-face{
+  font-family: 'DroidSerifRegular';
+  src: url('DroidSerif.eot')
+}
+@font-face{
+  font-family: 'DroidSerifRegular';
+  src: url('DroidSerif.eot');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'DroidSerifRegular', Georgia, Times New Roman, serif;
+}
+
+
+
+
+@font-face {
+  font-family: 'DroidSerifRegular';
+  src: url('DroidSerifBold.eot');
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+body {
+  font-family: 'DroidSerifRegular', Georgia, 'Times New Roman', serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+
+img {
+  transform: translate(20px, 40px);
+}
+
+
+img {
+  transform: rotate(15deg);
+}
+
+img {
+  transform: scale(1.5);
+}
+
+
+
+
+img {
+  transform: skewX(45deg);
+}
