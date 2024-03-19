@@ -68,6 +68,11 @@ footer {
   font-size: 14px;
 }
 
+/*class selector*/
+.address {
+  margin-bottom:5px;
+}
+
 /* type selector*/
 a {
   color: black;
