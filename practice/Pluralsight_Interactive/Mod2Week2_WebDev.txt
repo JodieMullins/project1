@@ -365,3 +365,159 @@ for (let monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {
   numSheep *= 4;
   console.log("There will be " + numSheep + " sheep after " + monthNumber + " month(s)!");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Create an if block that checks when monthNumber is a multiple of 4. 
+// Inside this block, calculate 75% of the sheep population and store the result in the reduction variable.
+
+if (monthNumber % 4 == 0) {
+    reduction = numSheep * 0.75
+
+
+// Still inside the if block (after the line reassigning reduction), console.log a message with the format below:
+// Removing number sheep from the population.
+// Replace number with the actual number of sheep being reduced.
+
+    console.log("Removing " + reduction + " sheep from the population.")
+
+// Lastly inside the if block, subtract the value of reduction from the total number of sheep and store the result back on the numSheep variable.
+
+ numSheep = numSheep - reduction
+
+
+// Create an else if block that checks when numSheep is greater than 10000. Inside this block, calculate 50% of the sheep population and store the result in the reduction variable.
+
+
+let numSheep = 4;
+let monthsToPrint = 12;
+let reduction;
+
+for (let monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {	
+  
+  // if statement goes here...
+  if (monthNumber % 4 == 0) {
+    reduction = numSheep * 0.75
+    console.log("Removing " + reduction + " sheep from the population.")
+    numSheep = numSheep - reduction
+  }
+
+  // else if statement goes here...
+  else if (numSheep > 10000) {
+    reduction = numSheep * (0.50);
+  }
+  numSheep *= 4;
+  console.log("There will be " + numSheep + " sheep after " + monthNumber + " month(s)!");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let numSheep = 4;
+let monthsToPrint = 12;
+let reduction;
+
+for (let monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {	
+  
+  // if statement goes here...
+  if (monthNumber % 4 == 0) {
+    reduction = numSheep * 0.75
+    console.log("Removing " + reduction + " sheep from the population.")
+    numSheep = numSheep - reduction
+  }
+
+  // else if statement goes here...
+  else if (numSheep > 10000) {
+    reduction = numSheep * (0.50)
+    console.log("Removing " + reduction + " sheep from the population.")
+  }
+  numSheep *= 4;
+  console.log("There will be " + numSheep + " sheep after " + monthNumber + " month(s)!");
+}
+
+
+
+// Lastly inside the else if block, subtract the value of reduction from the total number of sheep and store the result back on the numSheep variable.
+
+
+let numSheep = 4;
+let monthsToPrint = 12;
+let reduction;
+
+for (let monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {	
+  
+  // if statement goes here...
+  if (monthNumber % 4 == 0) {
+    reduction = numSheep * 0.75
+    console.log("Removing " + reduction + " sheep from the population.")
+    numSheep = numSheep - reduction
+  }
+
+  // else if statement goes here...
+  else if (numSheep > 10000) {
+    reduction = numSheep * (0.50)
+    console.log("Removing " + reduction + " sheep from the population.")
+    numSheep = numSheep - reduction;
+  }
+  numSheep *= 4;
+  console.log("There will be " + numSheep + " sheep after " + monthNumber + " month(s)!");
+}
+
+
+
+
