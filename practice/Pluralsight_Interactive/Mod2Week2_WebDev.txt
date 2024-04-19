@@ -521,3 +521,120 @@ for (let monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let totalGen = 19;
+let totalMW = 0; 
+
+for (let currentGen = 1; currentGen <= totalGen; currentGen++) {
+	  
+}
+
+
+
+
+// Let's start by adding an if statement that runs when currentGen is an even number and is less than or equal to 4.
+
+let totalGen = 19;
+let totalMW = 0; 
+
+for (let currentGen = 1; currentGen <= totalGen; currentGen++) {
+	  if (currentGen % 2 == 0 && currentGen <= 4) {
+        
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let totalGen = 19;
+let totalMW = 0; 
+
+for (let currentGen = 1; currentGen <= totalGen; currentGen++) {
+	  if (currentGen % 2 == 0 && currentGen <= 4) {
+        totalMW += 62
+        console.log("Generator #" + currentGen + " is on, adding 62 MW, for a total of " + totalMW + " MW!");
+      } else if (currentGen % 2 == 0 && currentGen >= 5) {
+        
+      }
+}
+
+let totalGen = 19;
+let totalMW = 0; 
+
+for (let currentGen = 1; currentGen <= totalGen; currentGen++) {
+	  if (currentGen % 2 == 0 && currentGen <= 4) {
+        totalMW += 62
+        console.log("Generator #" + currentGen + " is on, adding 62 MW, for a total of " + totalMW + " MW!");
+      } else if (currentGen % 2 == 0 && currentGen >= 5) {
+        totalMW += 124
+        console.log("Generator #" + currentGen + " is on, adding 124 MW, for a total of " + totalMW + " MW!");
+      
+      } else {
+         console.log("Generator #" + currentGen + " is off.");
+      }
+}
+
+
+
+
+
