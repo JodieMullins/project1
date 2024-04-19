@@ -250,3 +250,67 @@ for( let stoppedGen = runningGen; stoppedGen <= totalGen; stoppedGen++){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CONDITIONALS
+
+let num = 10;
+
+while (num > 0) {
+    if (num % 2 == 0) {
+    console.log(num);
+    }
+  num--;
+}
+
+
+
+
+
+
+
+
+let parkIsOpen = true; 
+
+if (parkIsOpen == true) {
+  console.log("Welcome to the Badlands National Park! Try to enjoy your stay.")
+} else{
+  console.log("Sorry, the Badlands are particularly bad today. We're closed!")
+}
+
+
+
+
