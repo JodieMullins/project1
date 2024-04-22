@@ -9,21 +9,20 @@ body {
     height: 100vh;
     margin: 3%;
     background-color:#1b1b32;
-    color:#f5f6f7;
+    color:#f5f6f7;  font-family: Tahoma;
+    font-size: 16px;
+  
   }
 
-  
   label {
     display: block;
     margin:0.5rem 0;
   }
 
-h1 {
-  margin-left: 5%;
-}
 
-p {
-  margin-left: 5%;
+h1, p {
+  margin: 1em auto;
+  text-align: center;
 }
 
 #terms-and-conditions {
