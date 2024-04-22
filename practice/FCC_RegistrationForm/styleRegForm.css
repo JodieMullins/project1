@@ -40,3 +40,9 @@ form {
   min-width: 300px;
   width: 60vw;
 }
+
+fieldset {
+  border: none;
+  border-bottom: 3px solid #3b3b4f;
+  padding: 2rem 0;
+}
