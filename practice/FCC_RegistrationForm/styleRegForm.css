@@ -36,20 +36,18 @@ h1, p {
 }
 
 #terms-and-conditions {
-  margin-left: 5%;
-  text-align: center;
-  justify-content: center;
+  width: 100%;
 }
+
 /* want to make terms and conditions font more accessible*/
 /* now I have checkbox issues*/
 a {
+  max-width: 100%;
   color:lightskyblue;
-  text-align: center;
-  justify-content: center;
 }
 
 #form-submission {
-  margin-left: 5%;
+/*  margin-left: 5%;*/
   margin-bottom: 10rem;
 }
 
