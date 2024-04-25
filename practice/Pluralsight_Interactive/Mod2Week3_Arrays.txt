@@ -1,0 +1,227 @@
+//Using a single JavaScript statement, replace the value of the fourth element in the array with a new numeric value so that all elements are in ascending order.
+
+let list = [1, 2, 3, 7, 5, 6, 7, 8, 9];
+
+list[3] = 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Using the function that adds data to the end of an array, add the number 10 to our list array.
+
+
+let list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+list.push(10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Create a new array called person, containing the following value types in this exact order:
+  1. First element should be a **String**.
+  2. Second element should be a **Number**
+  3. Third element should be a **Boolean**
+
+
+
+let person = {"string", 4, true}
+
+
+
+
+
+
+
+
+
+
+
+
+// Using the array function which pops the last element of an array, remove the last element from the values array and store it in a new variable called bool.
+
+let values = ["Jason", 4, true];
+
+bool = values.pop[2]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Arrays can hold lots of different types of data. Strings, values, variables, other arrays, and a combination of them all. Let's practice working with some of these more advanced arrays.
+
+let movie1 = [16, "Candles"];
+let movie2 = [3, "Men", "and", "a", "Baby"];
+let eightiesMovies = [movie1, movie2];
+
+
+//Using the existing eightiesMovies array, find a way to extract the word "Baby". Assign it to a new variable called infant and use console.log to output this value to the console.
+
+
+let infant = eightiesMovies[1][4];
+console.log(infant);
+
+
+
+// Now let's add a console.log that will output a string with the full title of the movie assigned to movie1 in the eightiesMovies array. Do that by using just the eightiesMovies variable.
+
+// Note: the movie title in question is 16 Candles.
+
+console.log(eightiesMovies[0][0] + " " + eightiesMovies[0][1]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Let's finish writing the numStrings function. Inside this function we will use a for loop that counts all of the strings // in the array parameter called list.
+
+// Inside the numStrings function, create a count variable and assign it a value of 0. We'll use this variable to keep track // of the number of strings.
+
+function isString(value){
+  return typeof value == "string";
+}
+
+function numStrings(list) {
+    
+}
+
+ 
+Inside the numStrings function, create a count variable and assign it a value of 0. We'll use this variable to keep track of the number of strings.
+
+function numStrings(list) {
+    let count = 0
+}
+
+
+// Now using a for loop, iterate through list one element at a time. The loop should declare a new variable i and set its // initial value to 0. Run the loop while i is less than list.length. After each iteration, increase i by 1.
+
+function numStrings(list) {
+  let count = 0
+  for (let i = 0; i < list.length; i++)
+}
+
+
+
+// For this next step, we'll make use of the previously defined isString function. Inside this function, we are using the //typeof operator which we haven't talked about yet. The typeof operator returns a string value describing its type (like //"string", "number", "boolean", etc.).
+
+//Inside the for loop, create an if statement that calls isString with the current element of the loop. If the return from //this function call is true, then increment count by 1.
+
+
+function numStrings(list) {
+  let count = 0
+  for (let i = 0; i < list.length; i++) {
+    if (isString(list[i])) {
+      count++;
+    }
+  }
+}
+
+
+// Finally, make sure the numStrings function returns the value for count.
+
+
+function isString(value){
+  return typeof value == "string"; 
+}
+
+function numStrings(list) {
+  let count = 0
+  for (let i = 0; i < list.length; i++) {
+    if (isString(list[i])) {
+      count++;
+    }
+  }
+  return count;
+}
+
+
+
+
