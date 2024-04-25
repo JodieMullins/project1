@@ -35,6 +35,10 @@ h1, p {
   text-align: center;
 }
 
+h1 {
+  color: lightgoldenrodyellow;
+}
+
 #terms-and-conditions {
   width: 100%;
 }
