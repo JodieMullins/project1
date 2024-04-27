@@ -1,0 +1,48 @@
+// Create an anonymous function and assign it to a new variable called maxTrees.
+
+let maxTrees = function() {}
+
+// Next, change the function to accept one parameter called acres.
+
+let maxTrees = function(acres) {}
+
+//Inside the function, multiply acres by 720 and return the result.
+
+let maxTrees = function(acres) {
+  return (acres*720);
+}
+
+// Lastly, using the maxTrees function, calculate how many trees we can fit into 10 acres.
+
+
+let maxTrees = function(acres) {
+  return (acres*720);
+}
+maxTrees(10);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
