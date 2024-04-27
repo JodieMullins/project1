@@ -266,12 +266,256 @@ helloMessage();
 
 
 
+let windowPassengers = ['Winter', 'Whitney', 'Wesley'];
+let aislePassengers = ['Aiden', 'Alex', 'Andy'];
+
+let wp = windowPassengers.map(function(name) {
+  //add return statement here
+});
+console.log(wp);
+
+let ap = aislePassengers.map(function(name) {
+  //add return statement here
+});
+console.log(ap);
+// Do the same thing to the function passed to map on aislePassengers. This time, return a string that prepends the string "A: " to the name of each aisle passenger. Remember to include a whitespace before the name of the passenger.
+
+let ap = aislePassengers.map(function(name) {
+  //add return statement here
+  return 'A: ' + name
+});
+console.log(ap);
 
 
 
 
 
 
+
+// Inside the function passed to map, called on windowPassengers, return a string that prepends the string "W: " to the name of each window passenger. Remember to include a whitespace before the name of the passenger.
+let windowPassengers = ['Winter', 'Whitney', 'Wesley'];
+let aislePassengers = ['Aiden', 'Alex', 'Andy'];
+
+let wp = windowPassengers.map(function(name) {
+  //add return statement here
+    return 'W: ' + name;
+});
+console.log(wp);
+
+let ap = aislePassengers.map(function(name) {
+  //add return statement here
+  return 'A: ' + name
+});
+console.log(ap);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let operations = [
+  function(a, b) {
+    return a + b;
+  },
+  function(a, b) {
+    return a * b;
+  },
+];
+
+let results = operations.map(function(operation) {
+
+});
+
+console.log(results);
+
+
+// Inside the function passed to map(), call the function assigned to operation with two arguments, 3 and 2, in this exact order. Return the result from the function.
+
+let operations = [
+  function(a, b) {
+    return a + b;
+  },
+  function(a, b) {
+    return a * b;
+  },
+];
+
+let results = operations.map(function(operation) {
+  return operation(3, 2);
+});
+
+console.log(results);
+
+
+// Go back to the operations array and add a third function expression. It should accept two parameters, a and b, just like the other two, and subtract the second one from the first.
+
+let operations = [
+  function(a, b) {
+    return a + b;
+  },
+  function(a, b) {
+    return a * b;
+  },
+  function(a, b) {
+    return a - b;
+  },
+];
+
+let results = operations.map(function(operation) {
+  return operation(3, 2);
+});
+
+console.log(results);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let fruits = ['apple', 'grape'];
+fruits.push('banana');
+
+console.log();
+
+//Create a function expression which takes one parameter. Assign this function to a new variable called extractFruit.
+
+let fruits = ['apple', 'grape'];
+fruits.push('banana');
+
+let extractFruit = function name(params) {
+  
+}
+
+console.log();
+
+
+
+// Inside the new function, call shift() on the array parameter we passed in task 1. shift() removes the first element of an array. Return this value from the function expression.
+
+let fruits = ['apple', 'grape'];
+fruits.push('banana');
+
+let extractFruit = function(f) {
+  return f.shift();
+}
+
+console.log();
+
+// console.log() the extractFruit function passing it the fruits array as a parameter.
+
+let fruits = ['apple', 'grape'];
+fruits.push('banana');
+
+let extractFruit = function(f) {
+  return f.shift();
+}
+
+console.log(extractFruit(fruits));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Let’s change things up a bit and implement our function in a different way. Instead of returning a string from extractFruit, we’ll return a function.
+
+// Inside the function expression, extractFruit return an anonymous function. This new function should not accept any parameters.
+
+let fruits = ['apple', 'grape'];
+fruits.push('banana');
+
+let extractFruit = function(f) {
+
+};
+
+let extract = extractFruit(fruits);
+
+console.log(extract());
+console.log(extract());
+console.log(extract());
+
+
+------------------------------------------------------
+
+let extractFruit = function(f) {
+  return function() {
+
+  };
+};
+
+
+
+// From inside the anonymous return function, return the string "I picked: " followed by the result of calling f.shift().
+
+
+
+let fruits = ['apple', 'grape'];
+fruits.push('banana');
+
+let extractFruit = function(f) {
+  return function() {
+    return 'I picked: ' + f.shift();
+  };
+};
+
+let extract = extractFruit(fruits);
+
+console.log(extract());
+console.log(extract());
+console.log(extract());
 
 
 
