@@ -30,6 +30,237 @@ maxTrees(10);
 
 
 
+// Create a new variable diff and assign it a function which accepts two parameters. Give these parameters any name you wish (i.e. a, b).
+
+let diff = function(a,b) {}
+
+let diff = function(a,b) {
+  return (a*a) - (b*b)
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//The output of the following code is dependent on the return value of the grabCondition() function. Finish the code so that values are assigned to helloMessage on both the if and else statements.
+
+
+function grabCondition() {
+  return Math.round(Math.random()) % 2 == 0;
+}
+
+let helloMessage;
+let condition = grabCondition();
+
+if (condition) {
+  
+} else {
+  
+}
+
+
+// In the if block, assign a function expression to helloMessage. This function expression should accept no parameters and return the string "hello from if".
+
+
+
+function grabCondition() {
+  return Math.round(Math.random()) % 2 == 0;
+}
+
+let helloMessage;
+let condition = grabCondition();
+
+if (condition) {
+  
+} else {
+  
+}
+
+
+
+
+// In the if block, assign a function expression to helloMessage. This function expression should accept no parameters and return the string "hello from if".
+
+function grabCondition() {
+  return Math.round(Math.random()) % 2 == 0;
+}
+
+let helloMessage;
+let condition = grabCondition();
+
+if (condition) {
+  let helloMessage() {
+    return "hello from if"
+  };
+} else {
+  
+}
+
+TRY AGAIN: 
+function grabCondition() {
+  return Math.round(Math.random()) % 2 == 0;
+}
+
+let helloMessage;
+let condition = grabCondition();
+
+if (condition) {
+  let helloMessage = function() {
+    return "hello from if";
+  };
+} else {
+  
+}
+
+
+
+SHOULD BE::
+
+if (condition) {
+  helloMessage = function() {
+    return 'hello from if';
+  };
+
+
+************
+
+function grabCondition() {
+  return Math.round(Math.random()) % 2 == 0;
+}
+
+let helloMessage;
+let condition = grabCondition();
+
+if (condition) {
+  helloMessage = function() {
+    return 'hello from if';
+  };
+} else {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Now assign a function expression to helloMessage inside the else block. Just like the previous one, this one takes no parameters but returns the string "hello from else".
+
+
+} else {
+   helloMessage = function () {
+    return 'hello from else';
+  };
+
+
+function grabCondition() {
+  return Math.round(Math.random()) % 2 == 0;
+}
+
+let helloMessage;
+let condition = grabCondition();
+
+if (condition) {
+  helloMessage = function() {
+    return 'hello from if';
+  };
+} else {
+   helloMessage = function () {
+    return 'hello from else';
+  };
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function grabCondition() {
+  return Math.round(Math.random()) % 2 == 0;
+}
+
+let helloMessage;
+let condition = grabCondition();
+
+if (condition) {
+  helloMessage = function() {
+    return 'hello from if';
+  };
+} else {
+   helloMessage = function () {
+    return 'hello from else';
+  };
+}
+helloMessage();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
