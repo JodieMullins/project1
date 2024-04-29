@@ -1,0 +1,69 @@
+ Hey, everybody! Welcome to level 2 of JavaScript road trip 3 of the Cold Closures Cove. Guess what? Congratulations! You've already made a basic closure. A closure is a package deal. 
+Let's take a look at one that was in a previous example we showed in the last level. 
+
+So in the buildTicket function that we had in the last level, you can see in our two returned anonymous functions several variables, like pass and pick and allRides that we're not created within the function that's being returned. 
+That's very important. The entire contents of any of these returned functions will still be available outside the function, outside buildTicket, when they get returned. 
+
+When we return a function from a function, and it is complete with variables that showed up in the external function, we have a closure. 
+
+So to kind of illustrate this a little bit better, let's look at a very small example of a closure. A closure will wrap up the entire local environment, complete with all of the necessary variables that came from an external scope. Here we have a function called testClosure, and in it I've just established a variable called x and assigned the value 4 to it, and then I'll return x from this function, a very simple function. Now that x variable is only local. That means it can only be accessed inside of the testClosure function. So let's take a look at that. If we were to call testClosure, we'd get a nice return of 4 as you might expect because we returned x. But if I tried to access the x variable from outside the function, I would get an undefined. That's because x disappears just as soon as the testClosure function is wrapped up. In other words, a function's local variables are just not available once the function scope has finally closed. Now let's make it just slightly more complex. So now we'll establish that same x variable as 4, and then we'll build a new function inside of our testClosure function, and we'll call that function closeX. Now, inside of there, we will return the x variable. And then outside, inside of the testClosure function we'll return the closeX function. Now here the inner function will be able to access the outer function's variables. Why? Because they feel like global variables to that innermost function. So when I say return x inside of the closeX function, closeX kind of looks around in its own local environment for an x, and it doesn't see one, so it looks outside there to the global scope inside of testClosure finds that x and assigns the 4 to the x inside of the innermost function. It's really important to note that x is not stored anywhere inside of the innermost function, not even as a parameter. So now let's check out calling our external function testClosure. And if we do that and we assign the results to a new variable, checkLocalX, we know that the entire function, closeX, the innermost function, gets returned and assigned to checkLocalX. Now, let's check out what happens when we call checkLocalX. We get 4. This is interesting because even though testClosure has completely finished operating, its scope is closed, we can still access the local variable that was declared in that function. Why is that? Because it has been bound as a closure inside of closeX. So, how can we use closures practically? Well, they're very helpful in what we call function "construction zones." They make the creation of very similar functions very efficient. So let's see how this works if we were to try to make some transportation modes for the Cold Closures Cove. Let's say that we had a submarine to get across the cove, as well as a battleship, and a giant seagull. Not only is it a giant seagull, it's a pirate giant seagull with blue feet. Since we have these three different modes of transportation across our cove, we can make a build cove ticket maker for our different modes of transport. Here's our function. And inside that function we would return another function that uses a name and alerts, "Here is your transportation ticket via the transport," which will get closed up from the external function. "Welcome to the Cold Closures Cove name," which will be involved on a local level as the parameter. Now, our buildCoveTicketMaker function will make a ticket maker for every single mode of transportation. They'll be similar functions, but just slightly different. So if we wanted to make ticket makers for the submarine, the battleship, and the giant seagull, we would establish three variables called getSubmarineTicket, getBattleshipTicket, and getGiantSeagullTicket, and we would call buildCoveTicketMaker for all of those variables. But the parameters for each of those functions would be different. So now that all of our variables have ticket makers inside them, we can call getSubmarineTicket, getBattleshipTicket, and getGiantSeagull ticket to see what's inside those variables. Well, look at there, they have exactly the same function inside each variable, but that's very deceptive because bound variables and their values will not be evident inside of a stored function. In other words, examining the function's contents will not show you a closure that has occurred. In our getSubmarineTicket variable, transport actually holds Submarine. And of course, in getBattleshipTicket, transport is Battleship, and in getGiantSeagull ticket, transport is Giant Seagull. So now let's show how that works. Until we've actually called any of these variables that have functions in them, the name variable that is inside those functions will stay undefined. So let's change that. Let's actually call our ticket makers. So we'll scoot our semicolons out of the way here, and we'll pass in some names, Mario, Luigi, and Bowser to our different ticket makers. What happens now? Well, Mario gets a ticket to the Submarine, and Luigi gets a ticket to the Battleship, and Bowser is forced to take the Giant Seagull. So now that you have a little bit of information to be dangerous, with some closures, we'll give you some challenges and see you back in the next section.
+
+Challenge: Closures
+
+All right, so now in this section, we're going to look at a very important feature of closures, specifically their ability to modify their bound variables in the background. Let's take a look at that. So, to demonstrate that specific behavior, we're going to add a passenger tracker to our build cove ticket maker. What's a passenger tracker? It will keep track of how many times we've given a specific ticket to any particular mode of transportation. So here's our original function, and we'll shuffle it up a little bit, and we're going to stick a new variable here at the very beginning of that function called passengerNumber, and we're going to set it equal to 0. What does that mean? That means that every time we build a ticket maker, it will get a passengerNumber of 0 to start. We're still going to return the function that has our alert in it, but inside that function we will increment our passengerNumber. What does that mean? Well, it means that when a particular ticket maker is called, whether for the Submarine or for the Battleship, we know that a new passenger has been added. So we will increase the amount of tickets that have been given. We'll also add to the alert, printing out the passengerNumber. Now when we call our buildCoveTicketMaker for our Submarine, well, we'll get a ticket maker back, and inside that new ticket maker, when we call it, we see our new passengerNumber incrementer, as well as our new line inside of our alert. Something you should notice is that passengerNumber's initial value is not evident here, but it does start at 0 and gets incremented every single time our ticket maker is called. So let's scoot aside our semicolon here and put Mario trying to get a Submarine ticket again, and what happens? We get a ticket that says here is your transportation ticket via the Submarine, welcome Mario, you are passenger number 1. That's because this is our very first call to getSubmarineTicket, and our passengerNumber has been incremented to 1. Now, what would happen if we then put Toad asking for a Submarine ticket? He wants to ride with Mario. So look, we get you are passenger number 2 for Toad. Wow! That means that our function, even when it has disappeared, has kept the progress of our passengerNumber after it has been incremented. Wow! So that's pretty cool, right? That means that even though our function's local scope has completely disappeared, it has retained the value every single time of our incremented variable. So now that you've seen how closures can make ultra secret changes on the inside of a function to their variables, we're going to give you some challenges regarding that, and we'll see you back in the next section.
+
+
+
+
+
+
+
+function mystery() {
+  let secret = 6;
+  function mystery2(multiplier) {
+    multiplier *= 3;
+    return secret * multiplier;
+  }
+  return mystery2;
+}
+
+let hidden = mystery();
+let result = // INSERT HERE
+
+console.log('Result is: ' + result);
+
+
+
+Call the function assigned to hidden, passing it the proper parameter so that when this program runs, it prints the message "Result is: 54" to the console.
+
+
+function mystery() {
+  let secret = 6;
+  function mystery2(multiplier) {
+    multiplier *= 3;
+    return secret * multiplier;
+  }
+  return mystery2;
+}
+
+let hidden = mystery();
+let result = hidden(3);
+
+console.log('Result is: ' + result);
+
+
+
+Call the function assigned to hidden, passing it the proper parameter so this program prints the message "Result is: 40" to the console.
+
+
+function mystery(input) {
+  let secret = 5;
+  function mystery2(multiplier) {
+    multiplier *= input;
+    return secret * multiplier;
+  }
+  return mystery2;
+}
+let hidden = mystery(4);
+let result = hidden(2);
+console.log('Result is: ' + result);
