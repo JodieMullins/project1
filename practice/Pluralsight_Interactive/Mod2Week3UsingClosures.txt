@@ -122,7 +122,22 @@ jumble(2);
 
 
 
+// ADVANCED CLOSURES //
 
+//Build a warning message by invoking the warningMaker() function and passing the string "iceberg" as an argument to it. Store the result in a new variable called icebergAlert.
+
+// Call the icebergAlert() function to view the warning message.
+
+
+function warningMaker(obstacle) {
+  
+  return function() {
+    console.log('Beware! There have been ' + obstacle + ' sightings today!');
+  };
+}
+
+let icebergAlert = warningMaker('iceberg');
+icebergAlert();
 
 
 
