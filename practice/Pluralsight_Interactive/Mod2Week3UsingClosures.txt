@@ -143,10 +143,96 @@ icebergAlert();
 
 
 
+// We've been asked to make some changes to the existing warningMaker function. The function must now announce a couple more things, like number of obstacles and location. The format of the new console.log() message should be as follows: > Beware! There have been obstacle sightings today! number have been spotted at the location!
+
+function warningMaker(obstacle) {
+  
+
+}
+
+
+// Inside warningMaker, return a new function which takes two parameters: number and location.
+
+
+function warningMaker(obstacle) {
+  return function(number, location) {
+    
+  };
+
+}
+
+function warningMaker(obstacle) {
+  return function(number, location) {
+    console.log("Beware! There have been " + obstacle + " sightings today! " + number + " have been spotted at the " + location + ".")
+  };
+
+}
 
 
 
 
 
 
+
+
+
+
+
+// New reports have come in on the radio! Time to use our newly created functions to let the visitors know about the danger ahead.
+
+
+function warningMaker(obstacle) {
+  return function(number, location) {
+    console.log(
+      'Beware! There have been ' +
+        obstacle +
+        ' sightings today! ' +
+        number +
+        ' have been spotted at the ' +
+        location +
+        '!'
+    );
+  };
+}
+
+
+
+
+
+// Use the warningMaker function to create alert functions for two reports: one for "killer // penguin" and one for "polar bear". Assign the result to two new variables called 
+// killerPenguinAlert and polarBearAlert, respectively.
+
+
+
+function warningMaker(obstacle) {
+  return function(number, location) {
+    console.log(
+      'Beware! There have been ' +
+        obstacle +
+        ' sightings today! ' +
+        number +
+        ' have been spotted at the ' +
+        location +
+        '!'
+    );
+  };
+}
+
+let killerPenguinAlert = warningMaker("killer penguin")
+let polarBearAlert = warningMaker("polar bear")
+
+
+
+
+
+
+//The radio informed us there are 6 killer penguins on the loose near the "Ice Caves". Use // this info to call the function assigned to killerPenguinAlert.
+
+killerPenguinAlert(6, 'Ice Caves');
+
+
+
+// Also part of the radio message was that 2 polar bears were spotted near "Blizzard Beach". Call the polarBearAlert function with the proper parameters.
+
+polarBearAlert(2, 'Blizzard Beach');
 
