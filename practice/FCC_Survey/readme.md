@@ -7,7 +7,7 @@
 1. [x] You should have a page title in an h1 element with an id of title
 2. [x] You should have a short explanation in a p element with an id of description
 3. [x] You should have a form element with an id of survey-form
-4. [] Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text
+4. [x] Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text
 5. [] Inside the form element, you are required to enter your email in an input field that has an id of email
 6. [] If you enter an email that is not formatted correctly, you will see an HTML5 validation error
 7. [] Inside the form, you can enter a number in an input field that has an id of number
