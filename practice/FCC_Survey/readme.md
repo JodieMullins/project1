@@ -9,8 +9,8 @@
 3. [x] You should have a form element with an id of survey-form
 4. [x] Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text
 5. [x] Inside the form element, you are required to enter your email in an input field that has an id of email
-6. [] If you enter an email that is not formatted correctly, you will see an HTML5 validation error
-7. [] Inside the form, you can enter a number in an input field that has an id of number
+6. [x] If you enter an email that is not formatted correctly, you will see an HTML5 validation error
+7. [x] Inside the form, you can enter a number in an input field that has an id of number
 8. [] The number input should not accept non-numbers, either by preventing you from typing them or by showing an HTML5 validation error (depending on your browser).
 9. [] If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error
 10. [] For the name, email, and number input fields, you can see corresponding label elements in the form, that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label"
