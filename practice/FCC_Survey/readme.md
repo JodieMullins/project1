@@ -8,7 +8,7 @@
 2. [x] You should have a short explanation in a p element with an id of description
 3. [x] You should have a form element with an id of survey-form
 4. [x] Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text
-5. [] Inside the form element, you are required to enter your email in an input field that has an id of email
+5. [x] Inside the form element, you are required to enter your email in an input field that has an id of email
 6. [] If you enter an email that is not formatted correctly, you will see an HTML5 validation error
 7. [] Inside the form, you can enter a number in an input field that has an id of number
 8. [] The number input should not accept non-numbers, either by preventing you from typing them or by showing an HTML5 validation error (depending on your browser).
