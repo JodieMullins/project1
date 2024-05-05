@@ -16,21 +16,24 @@
             <p id="description">Thank you for taking the time to help us improve.</p>
         
         <form id="survey-form">
-            <label id="name-label" for="name">Enter Your Full Name: <input id="name" type="text" required/></label>
-            <label id="email-label" for="email">Email Address: <input id="email" type="email" required/></label>
-            <label id="number-label" for="age">Your Age (optional) <input id="age" type="number" min="16" max="115"/></label>
+            
+            <fieldset>
+                <label id="name-label" for="name">Enter Your Full Name: <input id="name" type="text" required/></label>
+                <label id="email-label" for="email">Email Address: <input id="email" type="email" required/></label>
+                <label id="number-label" for="age">Your Age (optional) <input id="age" type="number" min="16" max="115"/></label>
 
-            <label id="motive-label" for="contact-motive"> What's your reason for reaching out today?
-                <select id="contact-motive" name="motive-selection">
-                    <option value="1" >Desktop Bug</option>
-                    <option value="2" >Laptop Bug</option>
-                    <option value="3" >Mobile Bug</option>
-                    <option value="4" >Exciting New Feature</option>
-                    <option value="5" >Praise</option>
-                    <option value="6" >Suggestion</option>
-                    <option value="7" >Emergency</option>
-                </select>
-            </label>
+                <label id="motive-label" for="contact-motive"> What's your reason for reaching out today?
+                    <select id="contact-motive" name="motive-selection">
+                        <option value="1" >Desktop Bug</option>
+                        <option value="2" >Laptop Bug</option>
+                        <option value="3" >Mobile Bug</option>
+                        <option value="4" >Exciting New Feature</option>
+                        <option value="5" >Praise</option>
+                        <option value="6" >Suggestion</option>
+                        <option value="7" >Emergency</option>
+                    </select>
+                </label>
+            </fieldset>
             
             <fieldset>
                 <legend>Item(s) to Improve (check all that apply) </legend>
@@ -45,7 +48,7 @@
 
             <fieldset>
                 <legend> Shall we contact you with a response? </legend>
-                
+
                 <label for="yes-response"><input id="yes-response" name="respond" type="radio" /> Yes </label>
                 <label for="no-response"><input id="no-response" name="respond" type="radio" /> No </label>
             </fieldset>
