@@ -7,6 +7,8 @@
 body{
     margin: 5%;
     min-width: 300px;
+    background-color: rgb(18, 31, 31);
+    color: rgb(204, 192, 177);
 }
 
 h1 {
@@ -26,3 +28,13 @@ fieldset {
     padding: 2%;
 }
 
+label {
+    display: block;
+    margin: 2%;
+}
+
+#name, #email, #age {
+    text-align: center;
+
+
+}
