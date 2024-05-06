@@ -43,9 +43,15 @@ label {
 }
 
 button {
+    max-width: 650px;
+    margin: 2% 0 20% 0;
     padding: 10px 15px;
     border-radius: 10%;
     color: rgb(18, 31, 31) ;
+}
+
+textarea {
+   display: block;
 }
 
 /*
@@ -65,5 +71,9 @@ button, div {
 
     button {
         padding: 5px 10% 5px 10%;
+    }
+
+    textarea {
+        display: inline;
     }
 }
