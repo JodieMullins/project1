@@ -17,11 +17,13 @@
         
         <form id="survey-form">
             
-            <fieldset>
+            <fieldset id="person">
                 <label id="name-label" for="name">Enter Your Full Name: <input id="name" type="text" placeholder="Full Name Here" /></label>
                 <label id="email-label" for="email">Email Address: <input id="email" type="email" placeholder="example@email.com"  required/></label>
                 <label id="number-label" for="age">Your Age (optional) <input id="age" type="number" value="age"  min="16" max="115"/></label>
-
+            </fieldset>
+            
+            <fieldset>
                 <label id="motive-label" for="contact-motive"> What's your reason for reaching out today?
                     <select id="contact-motive" name="motive-selection">
                         <option value="7" >Desktop Bug</option>
