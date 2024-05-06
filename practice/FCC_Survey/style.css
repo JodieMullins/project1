@@ -1,0 +1,28 @@
+/* ***************************************************
+                        SURVEY FORM
+****************************************************** */
+
+/* OUTSIDE OF FORM TAG*/
+
+body{
+    margin: 5%;
+    min-width: 300px;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+p {
+    text-align: center;
+}
+
+/* WITHIN FORM TAG */
+
+
+fieldset {
+    border: none;
+    padding: 2%;
+}
+
