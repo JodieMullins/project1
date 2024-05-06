@@ -40,15 +40,24 @@ label {
 
 #name, #email, #age {
     text-align: center;
-    
 }
 
-
+/*
+button, div {
+    padding: 5px;
+    border-radius: 10%;
+    display: block;
+    align-self: center;
+}*/
 
 @media screen and (min-width: 650px ) {
     body {
         text-align: center;
         border: none;
         padding: 2%;
+    }
+
+    button {
+        padding: 5px 10% 5px 10%;
     }
 }
