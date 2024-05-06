@@ -18,8 +18,8 @@
         <form id="survey-form">
             
             <fieldset>
-                <label id="name-label" for="name">Enter Your Full Name: <input id="name" type="text" value="name" required/></label>
-                <label id="email-label" for="email">Email Address: <input id="email" type="email" value="email"  required/></label>
+                <label id="name-label" for="name">Enter Your Full Name: <input id="name" type="text" placeholder="Full Name Here" /></label>
+                <label id="email-label" for="email">Email Address: <input id="email" type="email" placeholder="example@email.com"  required/></label>
                 <label id="number-label" for="age">Your Age (optional) <input id="age" type="number" value="age"  min="16" max="115"/></label>
 
                 <label id="motive-label" for="contact-motive"> What's your reason for reaching out today?
@@ -36,7 +36,7 @@
             </fieldset>
             
             <fieldset>
-                <legend>Item(s) to Improve (check all that apply) </legend>
+                <legend>Item(s) to Improve  </legend> (check all that apply)
 
                 <label for="exchange-improve"><input id="exchange-improve" name="improvement-type"  type="checkbox" value="exchanges"  /> Exchange </label>
                 <label for="quote-improve">   <input id="quote-improve" name="improvement-type" type="checkbox" value="quotes"  /> Daily Quote </label>
@@ -51,6 +51,7 @@
 
                 <label for="yes-response"><input id="yes-response" name="respond" type="radio" value="yes"/> Yes </label>
                 <label for="no-response"><input id="no-response" name="respond" type="radio" value="no" checked/> No </label>
+                <label for="diss-response"><input id="diss-response" name="respond" type="radio" value="diss" checked/> Make mine a diss track</label>
             </fieldset>
 
             <fieldset>
